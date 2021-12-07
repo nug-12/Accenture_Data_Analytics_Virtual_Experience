@@ -1,0 +1,44 @@
+---
+title: "Accenture Data Analytics Virtual Experience Task 1"
+output: html_notebook
+---
+
+Data cleaning and modeling.
+
++ List of CSV files: User, Profile, Location, Reactions, ReactionTypes, Session
+
++ Data to be gathered:
+
+PROFILE. user_id, interests, age
+
+CONTENT. category, content_id, content_type
+
+REACTION. content_id, reaction_type, user_id
+
+REACTION_TYPES. reaction_type, sentiment, score
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(magrittr)
+```
+
+
+```{r}
+df_pr <- read.csv("Profile.csv")
+df_pr <- subset(df_pr, select = -c(X))
+
+df_pr %>%
+    rename(
+        user_id = User.ID,
+        interest = Interests,
+        age = Age
+    )
+names(df_pr)
+```
+
+
+
+
+
+
