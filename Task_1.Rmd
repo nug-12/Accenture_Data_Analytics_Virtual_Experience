@@ -28,13 +28,13 @@ library(magrittr)
 df_pr <- read.csv("Profile.csv")
 df_pr <- subset(df_pr, select = -c(X))
 
-df_pr %>%
-    rename(
-        user_id = User.ID,
-        interest = Interests,
-        age = Age
-    )
-names(df_pr)
+df_pr <- df_pr %>%
+        rename(
+            user_id = User.ID,
+            interest = Interests,
+            age = Age
+        )
+head(df_pr)
 ```
 
 
