@@ -1,0 +1,43 @@
+content count per category
+
+animals 1897
+science 1796
+healthy eatining 1717
+
+mean count of reaction per category
+healthy eatning 29
+cooking 28
+animals 27
+food 27
+science 27
+
+score mean by category
+technology 40
+public speaking 40
+healthy eating 40
+education 40
+
+overall count of content type
+photo    6589
+video    6245
+GIF      6079
+audio    5660
+
+content type reaction count mean
+gif photo 26
+audio video 25
+
+content type score mean
+audio photo 40
+gif video 39
+
+overall count of sentiments
+positive    13807
+negative     7695
+neutral      3071
+
+overall count of reaction types
+heart          1622
+scared         1572
+peeking        1559
+hate           1552
